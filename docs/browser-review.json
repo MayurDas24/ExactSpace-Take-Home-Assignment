@@ -1,0 +1,46 @@
+{
+  "chat": {
+    "errors": [],
+    "failures": [],
+    "accessibility": [],
+    "viewport": [
+      {
+        "width": 768,
+        "noOverflow": true
+      },
+      {
+        "width": 390,
+        "noOverflow": true
+      },
+      {
+        "width": 320,
+        "noOverflow": true
+      }
+    ]
+  },
+  "gallery": {
+    "errors": [],
+    "failures": [],
+    "accessibility": [],
+    "viewport": [
+      {
+        "width": 768,
+        "noOverflow": true
+      },
+      {
+        "width": 390,
+        "noOverflow": true
+      },
+      {
+        "width": 320,
+        "noOverflow": true
+      }
+    ],
+    "fixturePagination": {
+      "initial": 6,
+      "after": 12
+    },
+    "previewLoaded": true,
+    "modalAccessibility": []
+  }
+}

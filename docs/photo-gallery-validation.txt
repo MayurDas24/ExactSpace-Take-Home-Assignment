@@ -1,0 +1,67 @@
+Validation: photo-gallery
+Node: v22.16.0
+
+
+> npm ci --no-fund --cache C:\Users\Mayur R Das\Documents\Codex\2026-11-14\https-github-com-exact-space-react\work\npm-cache
+
+added 238 packages, and audited 239 packages in 33s
+
+found 0 vulnerabilities
+
+> npm run lint
+
+> exact-space-photo-gallery@1.0.0 lint
+> eslint .
+
+
+> npm test
+
+> exact-space-photo-gallery@1.0.0 test
+> vitest run
+
+
+ RUN  v4.1.12 C:/Users/Mayur R Das/Documents/Codex/2026-11-14/https-github-com-exact-space-react/outputs/exact-space-react-assignment/photo-gallery
+
+
+ Test Files  1 passed (1)
+      Tests  11 passed (11)
+   Start at  19:41:58
+   Duration  2.79s (transform 96ms, setup 253ms, import 346ms, tests 830ms, environment 1.16s)
+
+
+> npm run build
+
+> exact-space-photo-gallery@1.0.0 build
+> vite build
+
+vite v7.3.8 building client environment for production...
+transforming...
+✓ 37 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.62 kB │ gzip:  0.40 kB
+dist/assets/index-RNSt2CTg.css   10.17 kB │ gzip:  2.92 kB
+dist/assets/index-CSDRjYWm.js   328.17 kB │ gzip: 98.25 kB
+✓ built in 727ms
+
+> npm run test:e2e
+
+> exact-space-photo-gallery@1.0.0 test:e2e
+> playwright test
+
+[WebServer] (node:28068) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 1 worker
+
+(node:35700) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 e2e\gallery.spec.js:13:1 › infinite scroll, likes, failure/retry, empty end, accessible preview and mobile layout (1.8s)
+  ok 2 e2e\gallery.spec.js:96:1 › empty feed and broken images have usable fallback states (359ms)
+
+  2 passed (4.0s)
+
+> npm audit
+found 0 vulnerabilities
+
+All checks passed.

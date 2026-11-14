@@ -1,0 +1,67 @@
+Validation: chat-app
+Node: v22.16.0
+
+
+> npm ci --no-fund --cache C:\Users\Mayur R Das\Documents\Codex\2026-11-14\https-github-com-exact-space-react\work\npm-cache
+
+added 234 packages, and audited 235 packages in 36s
+
+found 0 vulnerabilities
+
+> npm run lint
+
+> exact-space-chat-app@1.0.0 lint
+> eslint .
+
+
+> npm test
+
+> exact-space-chat-app@1.0.0 test
+> vitest run
+
+
+ RUN  v4.1.12 C:/Users/Mayur R Das/Documents/Codex/2026-11-14/https-github-com-exact-space-react/outputs/exact-space-react-assignment/chat-app
+
+
+ Test Files  1 passed (1)
+      Tests  7 passed (7)
+   Start at  19:41:49
+   Duration  4.61s (transform 125ms, setup 270ms, import 315ms, tests 2.64s, environment 1.16s)
+
+
+> npm run build
+
+> exact-space-chat-app@1.0.0 build
+> vite build
+
+vite v7.3.8 building client environment for production...
+transforming...
+✓ 33 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.57 kB │ gzip:  0.37 kB
+dist/assets/index-Bk2jtEKM.css    9.17 kB │ gzip:  2.86 kB
+dist/assets/index-Z4JJNJKb.js   232.95 kB │ gzip: 73.33 kB
+✓ built in 746ms
+
+> npm run test:e2e
+
+> exact-space-chat-app@1.0.0 test:e2e
+> playwright test
+
+[WebServer] (node:24948) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 1 worker
+
+(node:32856) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 e2e\chat.spec.js:3:1 › complete chat workflow, persistence, keyboard and mobile layout (970ms)
+  ok 2 e2e\chat.spec.js:55:1 › long content remains contained and text is rendered safely (264ms)
+
+  2 passed (3.2s)
+
+> npm audit
+found 0 vulnerabilities
+
+All checks passed.

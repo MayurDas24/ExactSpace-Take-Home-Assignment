@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Production builds
+dist/
+**/dist/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Local files
+.local/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Playwright artifacts
+playwright-report/
+test-results/
